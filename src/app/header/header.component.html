@@ -1,13 +1,38 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <p>こんにちは</p>
-        </div>
-        <div class="col-md-4">
-            <p>こんにちは</p>
-        </div>
-        <div class="col-md-4">
-            <p>こんにちは</p>
-        </div>
-    </div>
-</div>
+<div class="box">
+<div class="btn-group" dropdown>
+        <button type="button" class="btn btn-danger">Action</button>
+        <button type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split">
+          <span class="caret"></span>
+          <span class="sr-only">Split button!</span>
+        </button>
+        <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+          </li>
+          <li role="menuitem"><a class="dropdown-item" href="#">Something else
+            here</a></li>
+          <li class="divider dropdown-divider"></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="btn-group" dropdown [isOpen]="status.isopen" (isOpenChange)="change($event)">
+            <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+              Button dropdown <span class="caret"></span>
+            </button>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Something else
+                here</a></li>
+              <li class="divider dropdown-divider"></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-primary"
+                  (click)="toggleDropdown($event)">Toggle button dropdown
+          </button>
+          </div>
