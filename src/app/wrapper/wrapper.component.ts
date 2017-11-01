@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './wrapper.component.html'
 })
 export class WrapperComponent {
-  title = 'ngTest!!';
+
 }
