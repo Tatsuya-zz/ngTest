@@ -1,45 +1,39 @@
-<div id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="card">
-          <div class="card-header" role="tab" id="headingOne">
-            <h5 class="mb-0">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Collapsible Group Item #1
-              </a>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-            <div class="card-block">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+<section>
+<div class="container header-menu">
+    <div class="row justify-content-between">
+        <div class="col-sm-10 row header-menu">
+            <a class="col-sm-2 nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">menu1</a>
+            <a class="col-sm-2 nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">menu2</a>
+            <a class="col-sm-2 nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">menu3</a>
         </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingTwo">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
-              </a>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="card-block">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
+        <div class="col-sm-2 header-menu">
+            <button type="button" class="btn btn-danger">Login</button>
         </div>
-        <div class="card">
-          <div class="card-header" role="tab" id="headingThree">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
-              </a>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="card-block">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div>
+</div>
+</section>
+
+<section>
+<div class="header-content-box">
+    <div class="container header-content">
+
+        <div class="row justify-content-center header-title">
+            <div class="col align-self-center">
+                <h1>AngularTest!!</h1>
             </div>
-          </div>
         </div>
-      </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">
+                        <svg style="width:20px;height:20px;" viewBox="0 0 100 100" enable-background="new 0 0 100 100" data-jsx="3457296180" data-reactid="25"><path d="M93.207,84.553L75.148,66.494c11.005-15.155,9.68-36.479-3.984-50.143C63.596,8.784,53.677,5,43.758,5  C33.839,5,23.92,8.784,16.352,16.352c-15.136,15.136-15.136,39.676,0,54.812c7.568,7.568,17.487,11.352,27.406,11.352  c7.989,0,15.975-2.459,22.736-7.368l18.059,18.059C85.747,94.402,87.314,95,88.88,95c1.566,0,3.133-0.598,4.327-1.793  C95.597,90.818,95.597,86.943,93.207,84.553z M22.41,65.106c-11.771-11.771-11.771-30.925,0-42.696  c5.702-5.702,13.284-8.843,21.348-8.843c8.064,0,15.646,3.14,21.348,8.843c11.771,11.771,11.771,30.925,0,42.696  c-5.702,5.702-13.284,8.843-21.348,8.843C35.694,73.949,28.113,70.808,22.41,65.106z" data-jsx="3457296180" data-reactid="26"></path></svg>
+                    </span>
+                    <input type="text" [(ngModel)]="text" class="form-control" placeholder="検索" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+    </div>
+    入力したテキスト：{{text}}
+</div>
+</section>

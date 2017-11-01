@@ -1,3 +1,18 @@
-.bg-blue{
-    background-color: #5089e5;
+.header-menu{
+    padding: 10px;
+    height: 80px;
+    text-align: center;
+}
+
+.header-content-box{
+    background-color: #42d9f4;
+}
+
+.header-content{
+    height: 400px;
+}
+
+.header-title{
+    height:250px;
+    text-align: center;
 }
