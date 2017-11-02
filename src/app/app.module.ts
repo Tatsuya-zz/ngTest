@@ -9,11 +9,13 @@ import { Ng2BootstrapModule } from 'ngx-bootstrap';
 
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     WrapperComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,55 +1,32 @@
 <section>
-<div class="container header-menu">
-    <div class="row justify-content-between">
-        <div class="col-sm-10 row header-menu">
-            <a class="col-sm-2 nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">menu1</a>
-            <a class="col-sm-2 nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">menu2</a>
-            <a class="col-sm-2 nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">menu3</a>
-        </div>
-        <div class="col-sm-2 header-menu">
-            <button type="button" class="btn btn-danger">Login</button>
-        </div>
-    </div>
-</div>
-</section>
+    <div class="header-content-box">
+        <div class="container header-content">
 
-<section>
-<div class="header-content-box">
-    <div class="container header-content">
-
-        <div class="row justify-content-center header-title">
-            <div class="col align-self-center">
-                <h1>AngularTest!!</h1>
+            <div class=row>
+                <div class="col-sm-11 header-menu">
+                    <button type="button" class="btn btn-danger">Login</button>
+                </div>
             </div>
-        </div>
 
-        <div class="row justify-content-center">
-            <div class="col-sm-6">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">
-                        <svg style="width:20px;height:20px;" viewBox="0 0 100 100" enable-background="new 0 0 100 100" data-jsx="3457296180" data-reactid="25"><path d="M93.207,84.553L75.148,66.494c11.005-15.155,9.68-36.479-3.984-50.143C63.596,8.784,53.677,5,43.758,5  C33.839,5,23.92,8.784,16.352,16.352c-15.136,15.136-15.136,39.676,0,54.812c7.568,7.568,17.487,11.352,27.406,11.352  c7.989,0,15.975-2.459,22.736-7.368l18.059,18.059C85.747,94.402,87.314,95,88.88,95c1.566,0,3.133-0.598,4.327-1.793  C95.597,90.818,95.597,86.943,93.207,84.553z M22.41,65.106c-11.771-11.771-11.771-30.925,0-42.696  c5.702-5.702,13.284-8.843,21.348-8.843c8.064,0,15.646,3.14,21.348,8.843c11.771,11.771,11.771,30.925,0,42.696  c-5.702,5.702-13.284,8.843-21.348,8.843C35.694,73.949,28.113,70.808,22.41,65.106z" data-jsx="3457296180" data-reactid="26"></path></svg>
-                    </span>
-                    <input type="text" [(ngModel)]="text" class="form-control" placeholder="検索" aria-describedby="basic-addon1">
+            <div class="row justify-content-center header-title">
+                <div class="col align-self-center">
+                    <h1>AngularTest!!</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">
+                            <svg style="width:20px;height:20px;" viewBox="0 0 100 100" enable-background="new 0 0 100 100" data-jsx="3457296180" data-reactid="25">
+                                <path d="M93.207,84.553L75.148,66.494c11.005-15.155,9.68-36.479-3.984-50.143C63.596,8.784,53.677,5,43.758,5  C33.839,5,23.92,8.784,16.352,16.352c-15.136,15.136-15.136,39.676,0,54.812c7.568,7.568,17.487,11.352,27.406,11.352  c7.989,0,15.975-2.459,22.736-7.368l18.059,18.059C85.747,94.402,87.314,95,88.88,95c1.566,0,3.133-0.598,4.327-1.793  C95.597,90.818,95.597,86.943,93.207,84.553z M22.41,65.106c-11.771-11.771-11.771-30.925,0-42.696  c5.702-5.702,13.284-8.843,21.348-8.843c8.064,0,15.646,3.14,21.348,8.843c11.771,11.771,11.771,30.925,0,42.696  c-5.702,5.702-13.284,8.843-21.348,8.843C35.694,73.949,28.113,70.808,22.41,65.106z"
+                                    data-jsx="3457296180" data-reactid="26"></path>
+                            </svg>
+                        </span>
+                        <input type="text" [(ngModel)]="text" class="form-control" placeholder="検索" aria-describedby="basic-addon1">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    入力したテキスト：{{text}}
-</div>
-</section>
-
-<section>
-  <p>
-    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      Link with href
-    </a>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      Button with data-target
-    </button>
-  </p>
-  <div class="collapse" id="collapseExample">
-    <div class="card card-block">
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-    </div>
-  </div>
 </section>
