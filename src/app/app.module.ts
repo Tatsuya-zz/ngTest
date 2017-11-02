@@ -12,6 +12,9 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { ContentComponent } from './content/content.component';
 
+export const AppRoutes = [
+  {path: "login", component: LoginComponent},
+]
 
 @NgModule({
   declarations: [
@@ -24,9 +27,11 @@ import { ContentComponent } from './content/content.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    Ng2BootstrapModule.forRoot()
+    Ng2BootstrapModule.forRoot(),
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [WrapperComponent]
 })
+
 export class AppModule { }
