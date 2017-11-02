@@ -1,0 +1,17 @@
+.nav-content{
+    padding-top: 30px;
+}
+
+.body-content{
+    padding: 50px;
+}
+
+.card-body{
+    padding: 20px;
+    margin: 20px;
+}
+
+.card-title{
+    margin: 10px;
+    text-align: center
+}
