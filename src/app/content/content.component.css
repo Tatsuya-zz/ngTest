@@ -6,12 +6,10 @@
     padding: 50px;
 }
 
-.card-body{
-    padding: 20px;
-    margin: 20px;
+.card-block{
+    padding: 10px;
 }
 
-.card-title{
-    margin: 10px;
-    text-align: center
+.card-dev{
+    margin-bottom: 50px;
 }

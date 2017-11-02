@@ -12,14 +12,14 @@
                 <form role="form">
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="text" class="form-control" id="uLogin" placeholder="Login">
+                            <input type="text" class="form-control" placeholder="Nickname" name="nickname" [(ngModel)]="person.nickname">
                         </div>
                     </div>
                     <!-- /.form-group -->
 
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="password" class="form-control" id="uPassword" placeholder="Password">
+                            <input type="password" class="form-control" placeholder="Password" name="passwd" [(ngModel)]="person.passwd">
                         </div>
                         <!-- /.input-group -->
                     </div>
@@ -47,3 +47,6 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+
+{{person.nickname}}
+{{person.passwd}}
