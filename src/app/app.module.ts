@@ -8,17 +8,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { Ng2BootstrapModule } from 'ngx-bootstrap';
 
 import { WrapperComponent } from './wrapper/wrapper.component';
-import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
+import { FrontComponent } from './front/front.component';
+import { FrontHeaderComponent } from './front_header/frontHeader.component';
+import { FrontContentComponent } from './front_content/frontContent.component';
 
 export const AppRoutes = [
+  { path: "", component: FrontComponent },
 ]
 
 @NgModule({
   declarations: [
     WrapperComponent,
-    HeaderComponent,
-    ContentComponent
+    FrontComponent,
+    FrontHeaderComponent,
+    FrontContentComponent
   ],
   imports: [
     BrowserModule,

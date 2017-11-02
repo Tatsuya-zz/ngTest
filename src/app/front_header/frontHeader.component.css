@@ -1,0 +1,47 @@
+.header-content{
+    height: 300px;
+}
+
+.header-menu{
+    padding: 30px;
+    height: 50px;
+    text-align: right;
+}
+
+.header-content-box{
+    background-color: #4d525b;
+}
+
+.header-title{
+    height:150px;
+    color: white;
+    text-align: center;
+}
+
+
+body{
+    padding: 50px;
+}
+.modal-dialog {
+    width: 300px;
+}
+.modal-footer {
+    height: 70px;
+    margin: 0;
+}
+.modal-footer .btn {
+    font-weight: bold;
+}
+.modal-footer .progress {
+    display: none;
+    height: 32px;
+    margin: 0;
+}
+.input-group-addon {
+    color: #fff;
+    background: #3276B1;
+}
+
+.isCenter{
+    text-align: center
+}
