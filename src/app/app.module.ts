@@ -10,12 +10,15 @@ import { Ng2BootstrapModule } from 'ngx-bootstrap';
 import { WrapperComponent } from './wrapper/wrapper.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
+import { ContentComponent } from './content/content.component';
+
 
 @NgModule({
   declarations: [
     WrapperComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
