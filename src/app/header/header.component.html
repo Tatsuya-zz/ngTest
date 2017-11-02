@@ -4,7 +4,62 @@
 
             <div class=row>
                 <div class="col-sm-11 header-menu">
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" routerLink="/login">Login</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal" (click)="isLoginOpen=!isLoginOpen">Login</button>
+
+                    <!-- login -->
+                    <div *ngIf="isLoginOpen" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <h5>Log in</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" (click)="isLoginOpen=false">×</button>
+                                </div>
+                                <!-- /.modal-header -->
+
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Nickname" name="nickname" [(ngModel)]="person.nickname">
+                                            </div>
+                                        </div>
+                                        <!-- /.form-group -->
+
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="password" class="form-control" placeholder="Password" name="passwd" [(ngModel)]="person.passwd">
+                                            </div>
+                                            <!-- /.input-group -->
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </form>
+
+                                </div>
+                                <!-- /.modal-body -->
+
+                                <div class="modal-footer">
+                                    <button class="form-control btn btn-primary">Ok</button>
+
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100"
+                                            style="width: 0%;">
+                                            <span class="sr-only">progress</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.modal-footer -->
+
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                    </div>
+                    <!-- /.modal -->
+                    
+                    <!-- login -->
+
+
                 </div>
             </div>
 
