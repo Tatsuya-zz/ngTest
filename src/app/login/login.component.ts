@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'login',
@@ -13,8 +14,13 @@ export class LoginComponent {
   message = "ログインに失敗しました"
   inputForm = {nickname: "", password: ""}
 
+  constructor(
+    private router: Router
+  ){}
+
   confirm(){
     if(this.inputForm.nickname == this.name && this.inputForm.password == this.pass){
+      this.router.navigate(['management']);
     } else {
       this.isMessageOpen = true
     }
