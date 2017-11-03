@@ -12,11 +12,15 @@ import { FrontComponent } from './front/front.component';
 import { FrontHeaderComponent } from './front_header/frontHeader.component';
 import { FrontContentComponent } from './front_content/frontContent.component';
 import { LoginComponent } from './login/login.component';
-
+import { ManagementComponent } from './management/management.component';
+import { ManagementHeaderComponent } from './management_header/managementHeader.component';
+import { ManagementContentComponent } from './management_content/managementContent.component';
+import { ManagementSidebarComponent } from './management_sidebar/managementSidebar.component';
 
 export const AppRoutes = [
   { path: "", component: FrontComponent },
-  { path: "login", component: LoginComponent }
+  { path: "login", component: LoginComponent },
+  { path: "management", component: ManagementComponent }
 ]
 
 @NgModule({
@@ -25,7 +29,11 @@ export const AppRoutes = [
     LoginComponent,
     FrontComponent,
     FrontHeaderComponent,
-    FrontContentComponent
+    FrontContentComponent,
+    ManagementComponent,
+    ManagementHeaderComponent,
+    ManagementContentComponent,
+    ManagementSidebarComponent
   ],
   imports: [
     BrowserModule,

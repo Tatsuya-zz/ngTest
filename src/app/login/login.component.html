@@ -3,9 +3,10 @@
 
 	<form class="form-signin">
 		<h1 class="form-signin-heading text-muted">Sign In</h1>
-		<input type="text" class="form-control" placeholder="Email address" required="" autofocus="">
-		<input type="password" class="form-control" placeholder="Password" required="">
-		<button class="btn btn-lg btn-primary btn-block" type="submit">
+		<input type="text" class="form-control" placeholder="nickname" name="nickname" [(ngModel)]="inputForm.nickname" required="" autofocus="">
+		<input type="password" class="form-control" placeholder="password" name="password" [(ngModel)]="inputForm.password" required="">
+		<div *ngIf="isMessageOpen" class="alert alert-danger" role="alert">{{message}}</div>
+		<button class="btn btn-lg btn-primary btn-block" type="submit" (click)="confirm()">
 			Sign In
 		</button>
 	</form>
